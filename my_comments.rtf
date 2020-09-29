@@ -1,0 +1,25 @@
+mern ecommrce site building 
+using this toturial:https://www.youtube.com/watch?v=Fy9SdZLBTOo&list=WL&index=2&t=940s&ab_channel=CodingwithBasir
+the name of the video:React & Node Tutorial - Full ECommerce in 5 Hours [2020]
+owner:coding with basir
+
+he has some mistakes which he explain how to fix in his amazona git faq a file named Amazona-FAQ.md
+which is in here:https://gist.github.com/basir/d121df24c47861e13a1cdcbed1cca902#localhost3000apiproducts-404-error
+
+for this error:
+ proxy error: could not proxy request /api/products
+Check this:
+frontend/package.json
+{
+  "name": "frontend",
+  "proxy": "http://127.0.0.1:5000",
+...
+}
+solution:
+stop running frontend and backend
+Run backend first
+npm start
+Then frontend
+cd frontend
+npm start
+
